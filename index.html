@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+        <!-- font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="images/triangle-top.png" alt="" class="triangle-1">
+        <img src="images/triangle-left.png" alt="" class="triangle-2">
+        <div class="row" >
+        <div class="col-1">
+            <div class="home-img" style="height: 100%;display: flex;flex-direction: column;justify-content: end;align-items: end;">
+            <img src="images/man.png" alt="">
+            <img src="images/elements.png" alt="" class="elements">
+        </div>
+        </div>
+        <div class="col-2">
+            <h1 >Students grade forcasting <br><span class="main-title" style="font-size: 18px;font-weight: 500;"> </span></h1>
+            <div class="dropdown-content" style="display: flex;justify-content: space-between;align-items: center;">
+                <div class="form-box first-form-box">
+                    <h4>mother education </h4>
+                <div class="box">
+                    <div class="dropdown">select
+                        <span class="left-icon"></span>
+                        <span class="right-icon"></span>
+                        <div class="items">
+                            <a href="#" style="--i:1;"><span></span>none</a>
+                            <a href="#" style="--i:2;"><span></span>primary education (4th grade)</a>
+                            <a href="#" style="--i:3;"><span></span>5th to 9th grade</a>
+                            <a href="#" style="--i:4;"><span></span>secondary education</a>
+                            <a href="#" style="--i:5;"><span></span>higher education</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-box ">
+                <h4>father's education </h4>
+            <div class="box">
+                <div class="dropdown">select
+                    <span class="left-icon"></span>
+                    <span class="right-icon"></span>
+                    <div class="items">
+                        <a href="#" style="--i:1;"><span></span>none</a>
+                        <a href="#" style="--i:2;"><span></span>primary education (4th grade)</a>
+                        <a href="#" style="--i:3;"><span></span>5th to 9th grade</a>
+                        <a href="#" style="--i:4;"><span></span>secondary education</a>
+                        <a href="#" style="--i:5;"><span></span>higher education</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <div class="dropdown-content" style="display: flex;justify-content: space-between;align-items: center;">
+        <div class="form-box first-form-box">
+            <h4>mother job </h4>
+        <div class="box" style="margin-left: 4rem;">
+            <div class="dropdown">select
+                <span class="left-icon"></span>
+                <span class="right-icon"></span>
+                <div class="items">
+                    <a href="#" style="--i:1;"><span></span>primary education (4th grade)</a>
+                    <a href="#" style="--i:2;"><span></span>5th to 9th grade</a>
+                    <a href="#" style="--i:3;"><span></span>secondary education</a>
+                    <a href="#" style="--i:4;"><span></span>higher education</a>
+                    <a href="#" style="--i:5;"><span></span>none</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="form-box">
+        <h4 style="margin-right: 5.7rem;">fahter job </h4>
+    <div class="box">
+        <div class="dropdown">select
+            <span class="left-icon"></span>
+            <span class="right-icon"></span>
+            <div class="items">
+                <a href="#" style="--i:1;"><span></span>teacher</a>
+                <a href="#" style="--i:2;"><span></span>health</a>
+                <a href="#" style="--i:3;"><span></span>police</a>
+                <a href="#" style="--i:4;"><span></span>administrative</a>
+                <a href="#" style="--i:5;"><span></span>at_home</a>
+                <a href="#" style="--i:6;"><span></span>other</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+
+
+
+<div class="container-box-num" style="display: flex;justify-content: space-between;">
+    <div class="container-num" style="display: flex;justify-content: space-between;">
+        <h4 >Enter a Number</h4>
+        <input type="number" min="0" max="3" step="1" id="numberInput" placeholder="Enter Number between 0&3" style="width: 270px;margin-left: 2.11rem;">
+        <p id="errorMessage" style="color: red;"></p>
+    </div>
+
+    <div class="container-num">
+        <h4 style="margin-right: 3.2rem;">Enter a Number</h4>
+        <input type="number" min="0" max="3" step="1" id="numberInput" placeholder="Enter The Number " style="width: 270px;">
+        <p id="errorMessage" style="color: red;"></p>
+    </div>
+
+</div>
+
+
+<div class="container-box-num" style="display: flex;justify-content: space-between;margin-bottom: 2rem;">
+    <div class="container-num">
+        <h4>Enter a Number</h4>
+        <input type="number" min="0" max="3" step="1" id="numberInput" placeholder="Enter The Number" style="width: 270px;margin-left: 2.11rem;">
+        <p id="errorMessage" style="color: red;"></p>
+    </div>
+    
+
+    
+    </div>
+
+
+
+    <div class="container-check-box">
+        <div class="h4" style="margin-right: 10px; font-weight: 700;">student's home address type:</div>
+        <div class="container-check" style="margin-left: 2.9rem;">
+            <input type="radio" name="extra-support" id="input-1" class="check-input">
+            <label for="input-1" class="checkbox">
+                <svg viewBox="0 0 22 16" fill="none">
+                    <path d="M1 6.85L8.09677 14L21 1" />
+                </svg>
+            </label>
+            <span>urban </span>
+        </div>
+        <div class="container-check" style="margin-left: 4.6rem;">
+            <input type="radio" name="extra-support" id="input-2" class="check-input">
+            <label for="input-2" class="checkbox">
+                <svg viewBox="0 0 22 16" fill="none">
+                    <path d="M1 6.85L8.09677 14L21 1" />
+                </svg>
+            </label>
+            <span>rural </span>
+        </div>
+
+    
+    </div>
+<div class="container-check-box" style="display: flex;justify-content:space-around;">
+    <div class="h4" style="margin-right: 20px; font-weight: 700;margin-left: -12px;">going out with friends:</div>
+    <div class="container-check" style="margin-left: 3.56rem;">
+        <input type="radio" name="extra" id="input-3" class="check-input">
+        <label for="input-3" class="checkbox">
+            <svg viewBox="0 0 22 16" fill="none">
+                <path d="M1 6.85L8.09677 14L21 1" />
+            </svg>
+        </label>
+        <span>very low</span>
+    </div>
+    <div class="container-check" style="margin: 0 1rem;">
+        <input type="radio" name="extra" id="input-4" class="check-input">
+        <label for="input-4" class="checkbox">
+            <svg viewBox="0 0 22 16" fill="none">
+                <path d="M1 6.85L8.09677 14L21 1" />
+            </svg>
+        </label>
+        <span>low </span>
+    </div>
+    <div class="container-check" style="margin: 0 1rem;">
+        <input type="radio" name="extra" id="input-5" class="check-input">
+        <label for="input-5" class="checkbox">
+            <svg viewBox="0 0 22 16" fill="none">
+                <path d="M1 6.85L8.09677 14L21 1" />
+            </svg>
+        </label>
+        <span>moderate</span>
+    </div>
+    <div class="container-check" style="margin: 0 1rem;">
+        <input type="radio" name="extra" id="input-6" class="check-input">
+        <label for="input-6" class="checkbox">
+            <svg viewBox="0 0 22 16" fill="none">
+                <path d="M1 6.85L8.09677 14L21 1" />
+            </svg>
+        </label>
+        <span>high</span>
+    </div>
+    <div class="container-check">
+        <input type="radio" name="extra" id="input-7" class="check-input">
+        <label for="input-7" class="checkbox">
+            <svg viewBox="0 0 22 16" fill="none">
+                <path d="M1 6.85L8.09677 14L21 1" />
+            </svg>
+        </label>
+        <span>very high </span>
+    </div>
+</div>
+
+
+<div class="container-check-box" style="display: flex;justify-content: space-between;">
+    <div class="h4" style="margin-right: 10px; font-weight: 700;">workday alcohol consumption:</div>
+    <div class="container-check" >
+        <input type="radio" name="Workday " id="input-8" class="check-input">
+        <label for="input-8" class="checkbox">
+            <svg viewBox="0 0 22 16" fill="none">
+                <path d="M1 6.85L8.09677 14L21 1" />
+            </svg>
+        </label>
+        <span>very low</span>
+    </div>
+    <div class="container-check" style="margin: 0 1rem;">
+        <input type="radio" name="Workday " id="input-9" class="check-input">
+        <label for="input-9" class="checkbox">
+            <svg viewBox="0 0 22 16" fill="none">
+                <path d="M1 6.85L8.09677 14L21 1" />
+            </svg>
+        </label>
+        <span>low </span>
+    </div>
+    <div class="container-check" style="margin: 0 1rem;">
+        <input type="radio" name="Workday " id="input-10" class="check-input">
+        <label for="input-10" class="checkbox">
+            <svg viewBox="0 0 22 16" fill="none">
+                <path d="M1 6.85L8.09677 14L21 1" />
+            </svg>
+        </label>
+        <span>moderate</span>
+    </div>
+    <div class="container-check" style="margin: 0 1rem;">
+        <input type="radio" name="Workday " id="input-11" class="check-input">
+        <label for="input-11" class="checkbox">
+            <svg viewBox="0 0 22 16" fill="none">
+                <path d="M1 6.85L8.09677 14L21 1" />
+            </svg>
+        </label>
+        <span>high</span>
+    </div>
+    <div class="container-check">
+        <input type="radio" name="Workday " id="input-12" class="check-input">
+        <label for="input-12" class="checkbox">
+            <svg viewBox="0 0 22 16" fill="none">
+                <path d="M1 6.85L8.09677 14L21 1" />
+            </svg>
+        </label>
+        <span>very high </span>
+    </div>
+</div>
+
+
+
+<div class="container-check-box" style="display: flex;justify-content: space-between;">
+    <div class="h4" style="margin-right: 10px; font-weight: 700;">weekend alcohol consumption:</div>
+    <div class="container-check">
+        <input type="radio" name="Weekend" id="input-13" class="check-input">
+        <label for="input-13" class="checkbox">
+            <svg viewBox="0 0 22 16" fill="none">
+                <path d="M1 6.85L8.09677 14L21 1" />
+            </svg>
+        </label>
+        <span>very low</span>
+    </div>
+    <div class="container-check" style="margin: 0 1rem;">
+        <input type="radio" name="Weekend" id="input-14" class="check-input">
+        <label for="input-14" class="checkbox">
+            <svg viewBox="0 0 22 16" fill="none">
+                <path d="M1 6.85L8.09677 14L21 1" />
+            </svg>
+        </label>
+        <span>low </span>
+    </div>
+    <div class="container-check" style="margin: 0 1rem;">
+        <input type="radio" name="Weekend" id="input-15" class="check-input">
+        <label for="input-15" class="checkbox">
+            <svg viewBox="0 0 22 16" fill="none">
+                <path d="M1 6.85L8.09677 14L21 1" />
+            </svg>
+        </label>
+        <span>moderate</span>
+    </div>
+    <div class="container-check" style="margin: 0 1rem;">
+        <input type="radio" name="Weekend" id="input-16" class="check-input">
+        <label for="input-16" class="checkbox">
+            <svg viewBox="0 0 22 16" fill="none">
+                <path d="M1 6.85L8.09677 14L21 1" />
+            </svg>
+        </label>
+        <span>high</span>
+    </div>
+    <div class="container-check">
+        <input type="radio" name="Weekend" id="input-17" class="check-input">
+        <label for="input-17" class="checkbox">
+            <svg viewBox="0 0 22 16" fill="none">
+                <path d="M1 6.85L8.09677 14L21 1" />
+            </svg>
+        </label>
+        <span>very high </span>
+    </div>
+</div>
+
+
+
+
+<div class="container-radio" style="display: flex;justify-content: flex-start;margin-top: 2rem;">
+    <p>extra educational support ? </p>
+    <div style="margin-left: 1.8rem;">
+        <label>
+            <input type="radio" name="age">
+            <i class="fa fa-check" aria-hidden="true"></i>
+        </label>
+        <label>
+            <input type="radio" name="age">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </label>
+    </div>
+</div>
+
+
+
+<div class="submit-btn" style="margin: 40px auto 0 ; width: 100%;">
+    <a href="#" style="--clr:#fff">
+    <span>submit</span>
+    <i></i>
+</a>
+</div>
+
+    </div>
+        </div>
+    </div>
+</body>
+        <!-- ======================typed js ==========================-->
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script src="script.js"></script>
+</html>
